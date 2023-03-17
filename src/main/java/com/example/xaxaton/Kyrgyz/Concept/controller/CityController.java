@@ -1,8 +1,6 @@
 package com.example.xaxaton.Kyrgyz.Concept.controller;
 
-import com.example.xaxaton.Kyrgyz.Concept.entity.AirlineEntity;
 import com.example.xaxaton.Kyrgyz.Concept.entity.CityEntity;
-import com.example.xaxaton.Kyrgyz.Concept.service.AirlineService;
 import com.example.xaxaton.Kyrgyz.Concept.service.CityService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +14,7 @@ import java.util.List;
 public class CityController {
     @Autowired
     CityService service;
+
 
     @GetMapping("/{id}")
     public CityEntity getById(@PathVariable Long id) {

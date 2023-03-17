@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/airline")
-public class AirController {
+public class AirlineController {
     @Autowired
     AirlineService service;
 
